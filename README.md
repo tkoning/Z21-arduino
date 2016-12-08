@@ -36,6 +36,7 @@ Z21 arduino
   LED on pin 13 is indicator of XpressNet connection: flashes - no connection, solid - OK: in notifyXNetStatus(uint8_t LedState)
 
   GENERAL Connections and adjustments (how to run):
+  
   1)  Plug XpressNet cable from z21 emulator to Slave socket of your ROCO command station (10764). Your multiMouse you should plug as Master.
   
   2)  LAN cable plug to W5100 socket and to WLAN router (use separated with factory settings)
@@ -63,8 +64,11 @@ Z21 arduino
 
  
   If you want to use debug.print statements  SerialDebug 1 ( arduino mega only) line 56
+  
   if you want te use the webinterface  Webconfig 1 line 58
+  
   if you ALWAYS want to use the default IP adress and Xpressent adress as code in the sketch   FixedIP =true line 77
+  
   
   
   Positions of variables in the code :

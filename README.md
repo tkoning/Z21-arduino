@@ -37,17 +37,29 @@ Z21 arduino
 
   GENERAL Connections and adjustments (how to run):
   1)  Plug XpressNet cable from z21 emulator to Slave socket of your ROCO command station (10764). Your multiMouse you should plug as Master.
+  
   2)  LAN cable plug to W5100 socket and to WLAN router (use separated with factory settings)
+  
   3)  Make WLAN on router with IP address space 192.168.0.* 
+  
   4)  Download Z21 app for Android/iOS
+  
   5)  Connect to router WIFI. Check IP adress space for 192.168.0.* in mobile device
+  
   6)  Edit your MAC adress of ethernet shield below in sketch (you have to know it)
+  
   7)  Edit IP adress below in sketch (192.168.0.11 is default).  set IP adress outside DHCP range of router
-  8)  On "first start" of the arduino the default IP value inside the sketch will be used, there after the webpage can be used to modify       settings (depending settings of webconfig and FixIp)
-  9)  Webinterface is activated if WebPin (A5) is connected to GND on startup (depending settings of webconfig and FixIp)
-  10) Ipadress of webinterfaceis  default: 192.168.0.11  Be careful not to use extra characters in http request Webinterface will close       after 45 seconds
+  
+  8)  On "first start" of the arduino the default IP value inside the sketch will be used, thereafter the webpage can be used to modify       settings (depending settings of webconfig and FixIp)
+  
+  9)  Webinterface is activated if WebPin (A5) is connected to GND on startup (depending settings of webconfig (1) and FixIp (false))
+  
+  10) Ipadress of webinterface default: 192.168.0.11  Be careful not to use extra characters in http request. Webinterface will close       after 45 seconds
+  
   11) If you connect ResetPIn to GND on startup all settings will revert to default
-  12) The serial port in the arduino mega 9600 baud can be used for debug output
+  
+  12) The serial port in the arduino mega at 9600 baud can be used for debug output
+  
 
  
   If you want to use debug.print statements  SerialDebug 1 ( arduino mega only) line 56

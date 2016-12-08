@@ -17,12 +17,19 @@ Z21 arduino
    
    PinOut
     VCC => 5V of arduino;
+    
     GND => GND of arduino
+    
     RO => TX1 (18) pin (or viseversa, sheck if problem) UNO TX0
+    
     DI => RX1 (19) pin (or viseversa, sheck if problem) UNO RX0
+    
     RSE => Pin 9 (Digital)  originele schets pin 3
+    
     ResetPin => Pin A5   (originele schets A1)  maak A5 bij het opstarten laag als je terug wilt naar het default IP adres van de   sketch)
+    
     WebPin   => Pin A4   Maank A4 bij het opstarten laag als je de webinterface wilt opstarten
+    
  
   MAX485 RX/TX are connected to Serial1 pins of MEGA (18/19) => you can use Serial0 for debug log in Serial Terminal window of Arduino IDE app.
 

@@ -20,9 +20,9 @@ Z21 arduino
     
     GND => GND of arduino
     
-    RO => TX1 (18) pin (or viseversa, sheck if problem) UNO TX0
+    RO => TX1 (18) pin (or viseversa, check if problem) UNO TX0
     
-    DI => RX1 (19) pin (or viseversa, sheck if problem) UNO RX0
+    DI => RX1 (19) pin (or viseversa, check if problem) UNO RX0
     
     RSE => Pin 9 (Digital)  originele schets pin 3
     
@@ -45,14 +45,14 @@ Z21 arduino
   7)  Edit IP adress below in sketch (192.168.0.11 is default).  set IP adress outside DHCP range of router
   8)  On "first start" of the arduino the default IP value inside the sketch will be used, there after the webpage can be used to modify       settings (depending settings of webconfig and FixIp)
   9)  Webinterface is activated if WebPin (A5) is connected to GND on startup (depending settings of webconfig and FixIp)
-  10) Ipadress of webinterfaceis  default: 192.168.0.11  Be careful not to use extra characters in http request Webinterface will close           after 45 seconds
+  10) Ipadress of webinterfaceis  default: 192.168.0.11  Be careful not to use extra characters in http request Webinterface will close       after 45 seconds
   11) If you connect ResetPIn to GND on startup all settings will revert to default
   12) The serial port in the arduino mega 9600 baud can be used for debug output
 
  
   If you want to use debug.print statements  SerialDebug 1 ( arduino mega only) line 56
   if you want te use the webinterface  Webconfig 1 line 58
-  if you ALWAYS want to use the  deafult IP adress and Xpressent adress as code in the sketch   FixedIP =true line 77
+  if you ALWAYS want to use the default IP adress and Xpressent adress as code in the sketch   FixedIP =true line 77
   
   
   Positions of variables in the code :

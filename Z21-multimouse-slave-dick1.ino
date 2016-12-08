@@ -192,8 +192,7 @@ void setup() {
   delay(100);
 
   // EEPROM usage for storing the IP adresses
-  if (digitalRead(ResetPin) == LOW || FixIP == true) {
-
+  if (digitalRead(ResetPin) == LOW || FixIP == true || EEPROM.read(EEXNet) == 255) {
     EEPROM.write(EEXNet, XNetAddress);
     EEPROM.write(EEip, ip[0]);
     EEPROM.write(EEip + 1, ip[1]);
